@@ -47,7 +47,7 @@ public class Auto extends Vehiculo {
     }
 
     @Override
-    public void fabricar() {
+    public void Fabricar() {
         for (int i = 0; i < 4; i++) {
             Ruedas.add(new Rueda(12, 20, 30, this));
         }

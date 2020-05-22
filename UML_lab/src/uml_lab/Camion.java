@@ -41,9 +41,9 @@ public class Camion extends Vehiculo {
     }
 
     @Override
-    public void fabricar() {
+    public void Fabricar() {
         for (int i = 0; i < 6; i++) {
-            Ruedas.add(new Rueda(12, 20, 30, this));
+            Ruedas.add(new Rueda(30, 2680, 2680, this));
         }
     }
     

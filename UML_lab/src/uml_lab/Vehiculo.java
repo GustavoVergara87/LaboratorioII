@@ -28,7 +28,7 @@ public abstract class Vehiculo {
         this.id = id;
     }
 
-    public abstract void fabricar();
+    public abstract void Fabricar();
 
     public boolean controlarAireRuedas() {
         for (Rueda r : Ruedas) {
