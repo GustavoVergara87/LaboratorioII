@@ -43,7 +43,7 @@ public class Rueda {
         return nivelAireCorrecto;
     }
 
-    public void setNivelAireCorrecto(float nivelAireCorrecto) {
+    public void setNivelAireCorrecto(double nivelAireCorrecto) {
         this.nivelAireCorrecto = nivelAireCorrecto;
     }
 
