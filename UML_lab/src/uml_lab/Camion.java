@@ -52,6 +52,7 @@ public class Camion extends Vehiculo {
         for (int i = 0; i < Ruedas.size(); i++) {
             Ruedas.get(i).setNivelAireActual(Ruedas.get(i).getNivelAireActual()-0.05);
         }
+        this.controlarAireRuedas();
     }
     
     public void descargar(){

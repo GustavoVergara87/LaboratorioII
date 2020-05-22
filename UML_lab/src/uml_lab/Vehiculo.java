@@ -30,13 +30,13 @@ public abstract class Vehiculo {
 
     public abstract void Fabricar();
 
-    public boolean controlarAireRuedas() {
+    public void controlarAireRuedas() {
         for (Rueda r : Ruedas) {
             if (r.getNivelAireActual() != r.getNivelAireCorrecto()) {
-               return false; 
+                System.out.println("Ruedas con nivel de aire bajo " + r.getNivelAireActual()); 
             }
         }
-        return true;
+        System.out.println("Todas las ruedas infladas");
     }
 
 }
