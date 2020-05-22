@@ -16,9 +16,13 @@ public class Camion extends Vehiculo {
     private int cargaActual;
     private int cargaPermitida;
 
-    public Camion(int id, ArrayList<Rueda> Ruedas) {
-        super(id, Ruedas);
+    public Camion(int cargaActual, int cargaPermitida, int id) {
+        super(id);
+        this.cargaActual = cargaActual;
+        this.cargaPermitida = cargaPermitida;
     }
+
+   
 
     public int getCargaActual() {
         return cargaActual;

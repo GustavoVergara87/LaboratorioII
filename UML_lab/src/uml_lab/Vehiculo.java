@@ -16,13 +16,10 @@ public abstract class Vehiculo {
     private int id;
     protected ArrayList<Rueda> Ruedas = new ArrayList<>();
 
-    public Vehiculo(int id, ArrayList<Rueda> Ruedas ) {
+    public Vehiculo(int id ) {
         this.id = id;
-        this.Ruedas=Ruedas;
     }
 
-
-    
     public int getId() {
         return id;
     }

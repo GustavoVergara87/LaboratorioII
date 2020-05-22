@@ -16,8 +16,8 @@ public class Auto extends Vehiculo {
     private int velocidadActual;
     private int velocidadPermitida;
 
-    public Auto(int velocidadActual, int velocidadPermitida, int id, ArrayList<Rueda> Ruedas) {
-        super(id, Ruedas);
+    public Auto(int velocidadActual, int velocidadPermitida, int id) {
+        super(id);
         this.velocidadActual = velocidadActual;
         this.velocidadPermitida = velocidadPermitida;
     }
