@@ -54,12 +54,10 @@ public class RuedaTest {
 
     @Test
     public void testSetRodado() {
-        System.out.println("setRodado");
-        int Rodado = 0;
-        Rueda instance = null;
-        instance.setRodado(Rodado);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("getRodado");
+        instance.setRodado(9);
+        int result = instance.getRodado();
+        assertEquals(9, result);
     }
 
     @Test
@@ -74,12 +72,10 @@ public class RuedaTest {
 
     @Test
     public void testSetNivelAireActual() {
-        System.out.println("setNivelAireActual");
-        double nivelAireActual = 0.0;
-        Rueda instance = null;
-        instance.setNivelAireActual(nivelAireActual);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("setNivelAireCorrecto");
+        instance.setNivelAireActual(80.1);
+        double result = instance.getNivelAireActual();
+        assertEquals(80.1, result, 0.005);
     }
 
     @Test
@@ -96,11 +92,9 @@ public class RuedaTest {
     @Test
     public void testSetNivelAireCorrecto() {
         System.out.println("setNivelAireCorrecto");
-        float nivelAireCorrecto = 0.0F;
-        Rueda instance = null;
-        instance.setNivelAireCorrecto(nivelAireCorrecto);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        instance.setNivelAireCorrecto(80.1);
+        double result = instance.getNivelAireCorrecto();
+        assertEquals(80.1, result, 0.005);
     }
 
     @Test
@@ -115,12 +109,8 @@ public class RuedaTest {
     @Test
     public void testMiVehiculo() {
         System.out.println("miVehiculo");
-        Rueda instance = null;
-        int expResult = 0;
         int result = instance.miVehiculo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(8, result);
     }
 
     @Test
@@ -128,15 +118,13 @@ public class RuedaTest {
         System.out.println("getVehiculo");
         assertTrue(instance.getVehiculo().equals(auto));
     }
-    
-        @Test
-        public void testSetVehiculo() {
-        System.out.println("setVehiculo");
-            Vehiculo vehiculo = null;
-            Rueda instance = null;
-            instance.setVehiculo(vehiculo);
-            // TODO review the generated test code and remove the default call to fail.
-            fail("The test case is a prototype.");
-        }
 
+    @Test
+    public void testSetVehiculo() {
+        System.out.println("setVehiculo");
+        Auto auto1 = new Auto(15, 10, 5);
+        instance.setVehiculo(auto1);
+        assertTrue(instance.getVehiculo().equals(auto1));
     }
+
+}
